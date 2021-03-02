@@ -76,6 +76,7 @@
 				333AC6A6B25CEF417ACDDE4B /* Sources */,
 				333ACB1A23B7FB31B300DC32 /* Frameworks */,
 				333AC271785648C4102DBF00 /* CopyFiles */,
+				FA89007025EDD71B005014EA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -116,6 +117,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA89007025EDD71B005014EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# https://forums.swift.org/t/swiftsyntax-with-swift-5-1/29051/11\necho $BUILT_PRODUCTS_DIR\nln -sfn /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/lib_InternalSwiftSyntaxParser.dylib $BUILT_PRODUCTS_DIR\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		333AC6A6B25CEF417ACDDE4B /* Sources */ = {
